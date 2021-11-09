@@ -57,18 +57,13 @@
                 <li><a href="badges.html">Account</a></li>
 
                 <li>
-                  <!-- Dropdown Trigger -->
-                  <a class='dropdown-trigger' href='#' data-target='dropdown1'>Basket</a>
-
-                  <!-- Dropdown Structure -->
-                  <ul id='dropdown1' class='dropdown-content'>
-                    <li><a href="#!">one</a></li>
-                    <li><a href="#!">two</a></li>
-                    <li class="divider" tabindex="-1"></li>
-                    <li><a href="#!">three</a></li>
-                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-                  </ul>
+                  <a href="">
+                    {% if total_price %}
+                      ${{ total_price|floatformat:2 }}
+                    {% else %}
+                      $0.00
+                    {% endif %}
+                  </a>
                 </li>
 
               </ul>
