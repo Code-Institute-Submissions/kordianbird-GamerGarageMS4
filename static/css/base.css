@@ -31,6 +31,8 @@ body, html {
 
 nav {
     box-shadow: none;
+    background-color: #383838;
+    opacity: 0.5;
 }
 
 nav.nav-center ul {
