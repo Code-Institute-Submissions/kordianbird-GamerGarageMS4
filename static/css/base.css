@@ -3,6 +3,8 @@ body, html {
     background-color: #383838;
 }
 
+/* hero-image */
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/media/photomode_16122020_210140.png");
     height: -webkit-fill-available;
@@ -19,6 +21,25 @@ body, html {
     left: 50%;
 }
 
+/* no margin custom class */
+
 .no-margin {
     margin: 0;
+}
+
+/* navigation elements */
+
+nav {
+    box-shadow: none;
+}
+
+nav.nav-center ul {
+    text-align: center;
+}
+nav.nav-center ul li {
+    display: inline;
+    float: none;
+}
+nav.nav-center ul li a {
+    display: inline-block;
 }
