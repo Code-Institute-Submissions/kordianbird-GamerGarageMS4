@@ -34,48 +34,16 @@
     </head>
 
     <body>
-      <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper">
-              <a href="{% url 'home' %}" class="brand-logo center">GamerGarage</a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="">Account</a></li>
-                <li>
-                  <a href="">
-                    {% if total_price %}
-                      ${{ total_price|floatformat:2 }}
-                    {% else %}
-                      $0.00
-                    {% endif %}
-                  </a>
-                </li>
-              </ul>
-                <!-- search bar-->
-                <form method="GET" action="" class="hide-on-med-and-down">
-                  <div class="input-field" style="max-width: 400pt;">
-                    <input id="search" type="search" name="q" placeholder="search">
-                    <label class="label-icon" for="search"></label>
-                    <i class="material-icons">close</i>
-                    <div id="searchResults"></div>
-                  </div>
-                </form>
-            </div>
-          </nav>
-        </div>
 
+      <header>
+          <div class="hide-on-med-and-down">
+            {% include 'includes/product-nav.html' %}  
+          </div>
+          <div class="hide-on-large-only">
+            {% include 'includes/mobile-header.html' %}
+          </div>
+      </header>
 
-      <div class="navbar-fixed">
-        <nav class="nav-center">
-            <div class="nav-wrapper">
-              <ul id="nav-mobile" class="center hide-on-med-and-down">
-                <li><a href="">Controllers</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Headsets</a></li>
-                <li><a href="">PC</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
 
 
         {% if messages %}
@@ -89,6 +57,10 @@
 
         {% block postloadjs %}
         {% endblock %}
+
+        <script>
+        $('.dropdown-trigger').dropdown();
+        </script>
 
     </body>
   </html>

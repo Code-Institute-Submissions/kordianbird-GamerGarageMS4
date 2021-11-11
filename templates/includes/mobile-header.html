@@ -1,52 +1,30 @@
-<ul id="nav-mobile" class="right hide-on-med-and-down">
-    <li>
-        <div class="col s12 l4">
+
+<div class="navbar-fixed ">
+    <nav>
+        <div class="nav-wrapper">
             <!-- search bar-->
-            <form method="GET" action="">
-                <div>
-                    <input type="text" name="q" placeholder="search">
-                    <!-- <button type="submit">
-                            <span>
-                                <i class="large search"></i>
-                            </span>
-                        </button> -->
+            <form method="GET" action="" class="">
+                <div class="input-field" style="max-width: 400pt;">
+                    <input id="search" type="search" name="q" placeholder="search">
+                    <label class="label-icon" for="search"></label>
+                    <i class="material-icons">close</i>
+                    <div id="searchResults"></div>
                 </div>
             </form>
         </div>
-    </li>
-        <li></li>
-    <li><a class="dropdown-trigger" href="">accessories</a></li>
-    <li><a class="dropdown-trigger" href="sass.html">Games</a></li>
-    <li><a href="badges.html">Account</a></li>
-
-    <li>
-        <a href="">
-            {% if total_price %}
-            ${{ total_price|floatformat:2 }}
-            {% else %}
-            $0.00
-            {% endif %}
-        </a>
-    </li>
-
-</ul>
+    </nav>
+</div>
 
 
-
-<!-- Dropdown Trigger -->
-<a class='dropdown-trigger btn' href='#' data-target='dropdown1'><i class="material-icons">view_headline</i></a>
-
-<!-- Dropdown Structure -->
-<ul id='dropdown1' class='dropdown-content'>
-  <li><a href="#!">accessories</a></li>
-  <li><a href="#!">games</a></li>
-  <li class="divider" tabindex="-1"></li>
-  <li><a href="#!">account</a></li>
-  <li><a href="#!">
-        {% if total_price %}
-        ${{ total_price|floatformat:2 }}
-        {% else %}
-        $0.00
-        {% endif %}
-    </a></li>
-</ul>
+<div class="navbar-fixed ">
+    <nav class="nav-center">
+        <div class="nav-wrapper">
+            <ul class="center">
+                <li><a href="">Controllers</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Headsets</a></li>
+                <li><a href="">PC</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>

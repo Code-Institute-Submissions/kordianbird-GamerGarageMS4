@@ -1,11 +1,42 @@
-<div>
-    <!-- Dropdown Trigger -->
-<a class='dropdown-trigger btn' href='#' data-target='dropdown1'><i class="material-icons">Accessories</i></a>
+<div class="navbar-fixed ">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="{% url 'home' %}" class="brand-logo center">GamerGarage</a>
+            <ul class="right ">
+                <li><a href="">Account</a></li>
+                <li>
+                    <a href="">
+                        {% if total_price %}
+                        ${{ total_price|floatformat:2 }}
+                        {% else %}
+                        $0.00
+                        {% endif %}
+                    </a>
+                </li>
+            </ul>
+            <!-- search bar-->
+            <form method="GET" action="" class="">
+                <div class="input-field" style="max-width: 400pt;">
+                    <input id="search" type="search" name="q" placeholder="search">
+                    <label class="label-icon" for="search"></label>
+                    <i class="material-icons">close</i>
+                    <div id="searchResults"></div>
+                </div>
+            </form>
+        </div>
+    </nav>
+</div>
 
-<!-- Dropdown Structure -->
-<ul id='dropdown1' class='dropdown-content'>
-    <li><a href="#!">Headsets</a></li>
-    <li><a href="#!">Controllers</a></li>
-    <li><a href="#!">peripherals</a></li>
-</ul>
+
+<div class="navbar-fixed ">
+    <nav class="nav-center">
+        <div class="nav-wrapper">
+            <ul class="center ">
+                <li><a href="">Controllers</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Headsets</a></li>
+                <li><a href="">PC</a></li>
+            </ul>
+        </div>
+    </nav>
 </div>
