@@ -1,48 +1,37 @@
-<div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper">
-            <a href="{% url 'home' %}" class="brand-logo center">GamerGarage</a>
-            <ul class="right ">
-                <li><a href="">Account</a></li>
-                <li>
-                    <a href="">
-                        {% if total_price %}
-                        ${{ total_price|floatformat:2 }}
-                        {% else %}
-                        $0.00
-                        {% endif %}
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<ul>
 
-<div class="navbar-fixed ">
-    <nav class="nav-center">
-        <div class="nav-wrapper">
-            <ul class="center">
-                <li><a href="">Controllers</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Headsets</a></li>
-                <li><a href="">PC</a></li>
-            </ul>
-        </div>
-    </nav>
-</div>
-
-<div class="navbar-fixed ">
-    <nav>
-        <div class="nav-wrapper">
-            <!-- search bar-->
-            <form method="GET" action="" class="">
-                <div class="input-field" style="max-width: 100%;padding: 10px;">
-                    <input id="search" type="search" name="q" placeholder="search">
-                    <label class="label-icon" for="search"></label>
-                    <i class="material-icons">close</i>
-                    <div id="searchResults"></div>
-                </div>
-            </form>
-        </div>
-    </nav>
-</div>
+  <li class="list-inline-item dropdown">
+      <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="text-center">
+              <div><i class="fas fa-user fa-lg"></i></div>
+              <p class="my-0">My Account</p>
+          </div>
+      </a>
+      <div class="dropdown-menu border-0" aria-labelledby="user-options">
+          {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+                  <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
+              {% endif %}
+              <a href="" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+          {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+          {% endif %}
+      </div>
+  </li>
+  <li class="list-inline-item">
+      <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
+          <div class="text-center">
+              <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+              <p class="my-0">
+                  {% if grand_total %}
+                      ${{ grand_total|floatformat:2 }}
+                  {% else %}
+                      $0.00
+                  {% endif %}
+              </p>
+          </div>
+      </a>
+    </li>
+  </ul>
