@@ -38,6 +38,10 @@ body, html {
 
 /* custom classes */
 
+.audiowide {
+    font-family: 'Audiowide', cursive;
+}
+
 .tourney {
     font-family: 'Tourney', cursive;
 }
