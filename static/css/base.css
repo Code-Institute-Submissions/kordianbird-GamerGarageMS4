@@ -38,6 +38,10 @@ body, html {
 
 /* custom classes */
 
+.tourney {
+    font-family: 'Tourney', cursive;
+}
+
 .back-color-yellow {
     background-color: #FFFA00;
 }
