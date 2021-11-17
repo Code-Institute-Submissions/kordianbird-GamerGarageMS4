@@ -1,0 +1,15 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "name": "Logitech G332",
+        "description": "Big 50 mm audio drivers produce a complete, expansive sound for a more immersive gaming experience. 6 mm mic makes sure your squadmates can hear you. works with your PC or Mac or with gaming consoles",
+        "price": 40.00,
+        "category": 9,
+        "rating": 5.0,
+        "image_url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fbrain-images-ssl.cdn.dixons.com%2F6%2F2%2F10190226%2Fu_10190226.jpg&imgrefurl=https%3A%2F%2Fwww.currys.ie%2Fieen%2Fgaming%2Fgaming-accessories%2Fgaming-headsets%2Flogitech-g332-gaming-headset-black-red-10190226-pdt.html&tbnid=OyU3OCFH7ifCfM&vet=12ahUKEwiqt_Ci3ZX0AhV9QRUIHX_IBbYQMygCegUIARDKAQ..i&docid=SYKjg-fItaK5aM&w=1000&h=887&itg=1&q=logitech%20g332&ved=2ahUKEwiqt_Ci3ZX0AhV9QRUIHX_IBbYQMygCegUIARDKAQ",
+        "image": "u_10190226_2bvD3AP.jpg"
+      }
+    }
+]
