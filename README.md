@@ -39,3 +39,53 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 
 * __navbar__ - allows the user to navigate between pages
 * __about section__ - lets the user know more about the website
+
+# Technologies Used
+
+## Languages
+
+* [HTML5](https://en.wikipedia.org/wiki/HTML)
+-I used html (HyperText Markup Language) as the markup language for this project
+
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+-I used css3 to style many aspects of the website
+
+* [Python](https://www.python.org/)
+-I used python to work on the backend of my project
+
+## Framework
+
+* [Bootstrap](https://getbootstrap.com/)
+-I used Bootstrap to help me with responsive design  
+
+* [Stripe](https://stripe.com/ie?utm_campaign=paid_brand-IE_en_Search_Brand_Stripe-1615558792&utm_medium=cpc&utm_source=google&ad_content=307359047676&utm_term=kwd-295607662702&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=EAIaIQobChMIluDI-8Ok9AIVCLLtCh0hgQj7EAAYASAAEgK7V_D_BwE)
+-I used stripe as a payment system for my project
+
+* [Django](https://www.djangoproject.com/)
+-I used django to build my web app
+
+## Libraries
+
+* [Google-Fonts](https://fonts.google.com/)
+-I used google fonts to import 'audiowide', 'mono' and 'tourney' fonts
+
+* [Font-Awesome](https://fontawesome.com/)
+-I used font awesome to add icons in certain parts of the project
+
+* [jQuery](https://jquery.com/)
+-jQuery was included with bootstrap to work with some bootstrap features
+
+## Programs
+
+* [Git](https://git-scm.com/)
+-I used gitpod's terminal to commit my code and then to push it to GitHub
+
+* [GitHub](https://github.com/)
+-I used GitHub to store my project code 
+
+## Tools
+
+* [Heroku](https://id.heroku.com/login)
+-I used heroku to deploy my project
+
+
