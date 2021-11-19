@@ -32,3 +32,10 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 
 * hero image covers most of the screen to catch user's attention
 * the yellow color fits in nicely with the dark-grey to provide a bright but inviting feel
+
+# Features
+
+## Existing Features
+
+* __navbar__ - allows the user to navigate between pages
+* __about section__ - lets the user know more about the website
