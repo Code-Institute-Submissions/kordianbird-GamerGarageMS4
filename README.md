@@ -27,3 +27,8 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 * to be able to search for specific items
 * to be able to easily checkout
 * to be able to edit my reviews/ratings
+
+# Design
+
+* hero image covers most of the screen to catch user's attention
+* the yellow color fits in nicely with the dark-grey to provide a bright but inviting feel
