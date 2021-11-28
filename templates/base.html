@@ -43,13 +43,15 @@
         <div class="row bg-dark">
 
           <div class="col-12 col-lg-2 my-auto py-1 py-lg-0 text-center text-lg-left">
-            <a href="" class="nav-link main-logo-link">
+            <a href="{% url 'home' %}" class="nav-link main-logo-link">
               <h2 class="audiowide  color-yellow my-0">GamerGarage</h2>
             </a>
           </div>
 
+          <!-- search form -->
+
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <form method="GET" action="">
+            <form method="GET" action="{% url 'products' %}">
               <div class="input-group w-100">
                 <input class="form-control border border-black rounded-0" type="text" name="q"
                   placeholder="Search our site">
