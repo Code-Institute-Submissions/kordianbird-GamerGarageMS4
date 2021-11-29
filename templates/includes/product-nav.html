@@ -19,7 +19,7 @@
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
                 <a href="{% url 'products' %}?category=ps_controller" class="dropdown-item">PlayStation</a>
                 <a href="{% url 'products' %}?category=x_controller" class="dropdown-item">Xbox</a>
-                <a href="{% url 'products' %}?category=pc_game" class="dropdown-item">All Platforms</a> <!-- add all platforms url -->
+                <a href="{% url 'products' %}?category=ps_controller,x_controller" class="dropdown-item">All Platforms</a> <!-- add all platforms url -->
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Headsets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?product=turtle" class="dropdown-item">Tutle Beach</a> <!-- add turtle beach url -->
-                <a href="{% url 'products' %}?product=Logitech" class="dropdown-item">Logitech</a> <!-- add logitech url -->
-                <a href="{% url 'products' %}?product=turtle,Logitech" class="dropdown-item">All Brands</a> <!-- add all brands url -->
+                <a href="{% url 'products' %}?category=turt_headset" class="dropdown-item">Tutle Beach</a> <!-- add turtle beach url -->
+                <a href="{% url 'products' %}?category=logi_headset" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="{% url 'products' %}?category=turt_headset,logi_headset" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
 
@@ -39,9 +39,9 @@
                 Keyboards
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Razer</a> <!-- add razer url -->
-                <a href="" class="dropdown-item">Logitech</a> <!-- add logitech url -->
-                <a href="" class="dropdown-item">All Brands</a> <!-- add all brands url -->
+                <a href="{% url 'products' %}?category=logi_keyboard" class="dropdown-item">Razer</a> <!-- add razer url -->
+                <a href="{% url 'products' %}?category=raz_keyboard" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="{% url 'products' %}?category=raz_keyboard,logi_keyboard" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
 
@@ -50,9 +50,9 @@
                 Mouse
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Razer</a> <!-- add razer url -->
-                <a href="" class="dropdown-item">Logitech</a> <!-- add logitech url -->
-                <a href="" class="dropdown-item">All Brands</a> <!-- add all brands url -->
+                <a href="{% url 'products' %}?category=raz_mouse" class="dropdown-item">Razer</a> <!-- add razer url -->
+                <a href="{% url 'products' %}?category=logi_mouse" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="{% url 'products' %}?category=logi_mouse,raz_mouse" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
 
