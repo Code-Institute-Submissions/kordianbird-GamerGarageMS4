@@ -5,10 +5,10 @@
                 Games
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">PlayStation</a>
-                <a href="" class="dropdown-item ">Xbox</a>
-                <a href="" class="dropdown-item ">PC</a>
-                <a href="" class="dropdown-item">All Platforms</a>
+                <a href="{% url 'products' %}?category=ps_game" class="dropdown-item">PlayStation</a>
+                <a href="{% url 'products' %}?category=x_game" class="dropdown-item ">Xbox</a>
+                <a href="{% url 'products' %}?category=pc_game" class="dropdown-item ">PC</a>
+                <a href="{% url 'products' %}?category=ps_game,pc_game,x_game" class="dropdown-item">All Platforms</a> <!-- add all platforms url -->
             </div>
         </li>
 
@@ -17,10 +17,9 @@
                 Controllers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">PlayStation</a>
-                <a href="" class="dropdown-item">Xbox</a>
-                <a href="" class="dropdown-item">PC</a>
-                <a href="" class="dropdown-item">All Platforms</a>
+                <a href="{% url 'products' %}?category=ps_controller" class="dropdown-item">PlayStation</a>
+                <a href="{% url 'products' %}?category=x_controller" class="dropdown-item">Xbox</a>
+                <a href="{% url 'products' %}?category=pc_game" class="dropdown-item">All Platforms</a> <!-- add all platforms url -->
             </div>
         </li>
 
@@ -29,9 +28,9 @@
                 Headsets
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Tutle Beach</a>
-                <a href="" class="dropdown-item">Logitech</a>
-                <a href="" class="dropdown-item">All Brands</a>
+                <a href="{% url 'products' %}?product=turtle" class="dropdown-item">Tutle Beach</a> <!-- add turtle beach url -->
+                <a href="{% url 'products' %}?product=Logitech" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="{% url 'products' %}?product=turtle,Logitech" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
 
@@ -40,9 +39,9 @@
                 Keyboards
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Razer</a>
-                <a href="" class="dropdown-item">Logitech</a>
-                <a href="" class="dropdown-item">All Brands</a>
+                <a href="" class="dropdown-item">Razer</a> <!-- add razer url -->
+                <a href="" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
 
@@ -51,9 +50,9 @@
                 Mouse
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Razer</a>
-                <a href="" class="dropdown-item">Logitech</a>
-                <a href="" class="dropdown-item">All Brands</a>
+                <a href="" class="dropdown-item">Razer</a> <!-- add razer url -->
+                <a href="" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
 
@@ -62,9 +61,9 @@
                 Mouse Pads
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Razer</a>
-                <a href="" class="dropdown-item">Logitech</a>
-                <a href="" class="dropdown-item">All Brands</a>
+                <a href="" class="dropdown-item">Razer</a> <!-- add razer url -->
+                <a href="" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
     </ul>
