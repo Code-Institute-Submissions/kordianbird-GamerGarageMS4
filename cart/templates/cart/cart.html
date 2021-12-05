@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col">
+            <div style="background-color: aliceblue;" class="col">
                 {% if cart_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
@@ -130,6 +130,10 @@
     </div>
 {% endblock %}
 
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {
@@ -141,6 +145,7 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
         var url = `/cart/remove/${itemId}/`;
         var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
@@ -150,3 +155,4 @@
          });
     })
 </script>
+{% endblock %}
