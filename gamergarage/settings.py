@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-skw91iwq==_)z6_#@6pdz-=3nun-#^=p--ktd6-y)$3v=1l0c5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gamergarage-kordian.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -121,16 +121,18 @@ WSGI_APPLICATION = 'gamergarage.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
-DATABASES = {
-    'default': dj_database_url.parse('postgres://ljzoigupmjveur:6427965dbaf3e1a3adedc96e32ee77a5a452f0e61af12ac21a725a7fc206e0ce@ec2-52-214-178-113.eu-west-1.compute.amazonaws.com:5432/dd7451t9l48p17')
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
