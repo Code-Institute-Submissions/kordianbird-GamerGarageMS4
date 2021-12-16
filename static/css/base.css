@@ -81,3 +81,7 @@ body, html {
 .btn {
     background-color: #fffa00 !important;;
   }
+
+  p {
+    color: #e6ebf1;
+  }
