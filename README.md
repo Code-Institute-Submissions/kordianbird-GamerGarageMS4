@@ -39,6 +39,8 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 
 * __navbar__ - allows the user to navigate between pages
 * __about section__ - lets the user know more about the website
+* __profile__ - lets the user see their order history and provide default delivery information
+* __search bar__ - allows for an easier way to locate products
 
 # Technologies Used
 

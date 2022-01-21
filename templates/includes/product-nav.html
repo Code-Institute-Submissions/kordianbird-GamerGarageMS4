@@ -39,8 +39,8 @@
                 Keyboards
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=logi_keyboard" class="dropdown-item">Razer</a> <!-- add razer url -->
-                <a href="{% url 'products' %}?category=raz_keyboard" class="dropdown-item">Logitech</a> <!-- add logitech url -->
+                <a href="{% url 'products' %}?category=raz_keyboard" class="dropdown-item">Razer</a> <!-- add razer url -->
+                <a href="{% url 'products' %}?category=logi_keyboard" class="dropdown-item">Logitech</a> <!-- add logitech url -->
                 <a href="{% url 'products' %}?category=raz_keyboard,logi_keyboard" class="dropdown-item">All Brands</a> <!-- add all brands url -->
             </div>
         </li>
@@ -61,9 +61,7 @@
                 Mouse Pads
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=raz_mouse_pad" class="dropdown-item">Razer</a> <!-- add razer url -->
-                <a href="{% url 'products' %}?category=logi_mouse_pad" class="dropdown-item">Logitech</a> <!-- add logitech url -->
-                <a href="{% url 'products' %}?category=raz_mouse_pad,logi_mouse_pad" class="dropdown-item">All Brands</a> <!-- add all brands url -->
+                <a href="{% url 'products' %}?category=mouse_pad" class="dropdown-item">All Brands</a> <!-- add razer url -->
             </div>
         </li>
     </ul>
