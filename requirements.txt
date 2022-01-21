@@ -43,7 +43,6 @@ jedi==0.18.0
 jeepney==0.7.1
 Jinja2==3.0.1
 jsonschema==3.2.0
-jupyter-client==7.1.0
 jupyter-core==4.7.1
 jupyterlab-pygments==0.1.2
 keyring==23.2.1
@@ -84,7 +83,7 @@ pylama==7.7.1
 pylint==2.10.2
 pyparsing==2.4.7
 pyrsistent==0.18.0
-python-dateutil==2.1
+python-dateutil==1.5
 python3-openid==3.2.0
 PyYAML==5.4.1
 pyzmq==22.2.1
