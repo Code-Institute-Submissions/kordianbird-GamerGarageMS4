@@ -40,6 +40,7 @@ def remove_from_cart(request, item_id):
     """Remove the item from the shopping cart"""
 
     try:
+        product = get_object_or_404(Product, pk=item_id)
         size = None
         if 'product_size' in request.POST:
             size = request.POST['product_size']
