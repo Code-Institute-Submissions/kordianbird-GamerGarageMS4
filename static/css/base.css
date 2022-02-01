@@ -91,6 +91,10 @@ p {
     color: #e6ebf1;
 }
 
+.color-black {
+    color: #101010;
+}
+
 label {
     color:yellow;
 }
