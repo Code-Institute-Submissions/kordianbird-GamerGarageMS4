@@ -91,6 +91,10 @@ p {
     color: #e6ebf1;
 }
 
+label {
+    color:yellow;
+}
+
 /* Allauth */
 
 .allauth-form-inner-content p {
