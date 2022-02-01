@@ -18,10 +18,8 @@
             <div class="my-5 text-center">
                 <h2 class="color-yellow my-4">What is GamerGarage?</h2>
                 <div class="col-lg-6 offset-lg-3 info-box">
-                    <p>
-                        gamergarage is a place for buying games, controllers and other accessories for great prices. Most of our stock comes from other shops as “unsold products” so you can help out and clear the stock for cheap! <hr>
-                        Note that unsold products doesn’t mean faulty or used, it’s just products that have been laying in the storage for too long and have to be cleared out
-                    </p>
+                    <p>gamergarage is a place for buying games, controllers and other accessories for great prices. Most of our stock comes from other shops as “unsold products” so you can help out and clear the stock for cheap!</p> <hr>
+                    <p>Note that unsold products doesn’t mean faulty or used, it’s just products that have been laying in the storage for too long and have to be cleared out</p>
                 </div>
             </div>
             <div class="my-5 text-center">
@@ -30,7 +28,11 @@
                         Start Shopping Now!
                     </h3>
                 </a>
+                {% if request.user.is_authenticated %}
+                    
+                {% else %}
                     <a href="" class="btn btn-lg rounded-0 text-uppercase py-3 color-yellow">create account</a>
+                {% endif %}
             </div>
            </div>
        </div>
