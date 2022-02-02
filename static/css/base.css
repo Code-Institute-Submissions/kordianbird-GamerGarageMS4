@@ -166,8 +166,9 @@ label {
     width: 25em;
 }
 
-#product-management input::placeholder {
-    color: #aab7c4;
+#product-management label {
+    color: #FFFA00;
+    display: contents;
 }
 
 #product-management select {
@@ -197,4 +198,11 @@ label {
 
 #product-management span input {
     align-items:start;
+}
+
+/* Edit Product */
+
+#edit_product label {
+    color: #FFFA00;
+    display: contents;
 }
