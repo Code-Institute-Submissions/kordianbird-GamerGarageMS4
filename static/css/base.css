@@ -156,3 +156,45 @@ label {
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
 }
+
+/* Add Product */
+
+#product-management input {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
+
+#product-management input::placeholder {
+    color: #aab7c4;
+}
+
+#product-management select {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
+
+#product-management textarea {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
+
+#product-management #id_image_url {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 0px;
+    width: 25em;
+}
+
+#product-management span {
+    display: contents;
+}
+
+#product-management span input {
+    align-items:start;
+}
