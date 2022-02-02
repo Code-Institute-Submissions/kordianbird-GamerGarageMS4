@@ -80,7 +80,7 @@ body, html {
 
 .btn-yellow {
     background-color: #fffa00 !important;;
-    color: #101010;
+    color: #101010 !important;
   }
 
 p {
@@ -96,10 +96,14 @@ p {
 }
 
 label {
-    color:yellow;
+    display: none;
 }
 
 /* Allauth */
+
+.allauth-form-inner-content {
+    text-align: center;
+}
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
@@ -109,6 +113,8 @@ label {
 .allauth-form-inner-content input {
     border-color: #000;
     border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
 }
 
 .allauth-form-inner-content input::placeholder {
