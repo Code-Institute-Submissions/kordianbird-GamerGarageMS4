@@ -65,6 +65,19 @@ body, html {
     border: 5px solid yellow !important;
 }
 
+.btn-yellow {
+    background-color: #fffa00 !important;;
+    color: #101010 !important;
+}
+
+.color-white {
+    color: #e6ebf1;
+}
+
+.color-black {
+    color: #101010;
+}
+
 .sort-menu, li, a{
     text-decoration: none;
     color: black;
@@ -78,22 +91,11 @@ body, html {
     padding-top: 120px;
 }
 
-.btn-yellow {
-    background-color: #fffa00 !important;;
-    color: #101010 !important;
-  }
 
 p {
     color: #e6ebf1;
 }
 
-.color-white {
-    color: #e6ebf1;
-}
-
-.color-black {
-    color: #101010;
-}
 
 label {
     display: none;

@@ -1,0 +1,15 @@
+/* Profile */
+
+#profile-update-form input {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
+
+#profile-update-form select {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
