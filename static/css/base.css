@@ -62,6 +62,11 @@ body, html {
     margin: 0;
 }
 
+.img-max {
+    max-height: 1000px;
+    max-width: 500px;
+}
+
 .info-box {
     background-color: #101010!important;
     padding: 10px 10px 10px 10px;
