@@ -220,3 +220,19 @@ label {
     color: #FFFA00;
     display: contents;
 }
+
+/* Checkout */
+
+#payment-form input {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
+
+#payment-form select {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 25em;
+}
