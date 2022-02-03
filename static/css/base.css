@@ -234,12 +234,12 @@ label {
     border-color: #000;
     border-radius: 0;
     margin-bottom: 10px;
+    width: auto;
 }
 
 #payment-form .form-check-label {
     color: #FFFA00;
     display: contents;
-    width: auto;
 }
 
 #payment-form select {
