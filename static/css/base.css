@@ -50,6 +50,10 @@ body, html {
     background-color: #FFFA00;
 }
 
+.back-color-black {
+    background-color: #212529;
+}
+
 .color-yellow {
     color: #FFFA00 !important;
 }
