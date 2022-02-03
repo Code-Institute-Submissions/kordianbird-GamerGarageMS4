@@ -230,6 +230,17 @@ label {
     width: 25em;
 }
 
+#payment-form .form-check-input {
+    border-color: #000;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+#payment-form .form-check-label {
+    color: #FFFA00;
+    display: contents;
+}
+
 #payment-form select {
     border-color: #000;
     border-radius: 0;
