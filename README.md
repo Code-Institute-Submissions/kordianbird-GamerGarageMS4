@@ -27,6 +27,95 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 * hero image covers most of the screen to catch user's attention
 * the yellow color fits in nicely with the dark-grey to provide a bright but inviting feel
 
+# Structure
+
+## Base template
+The base template is used to hold elements that are displayed across the entire site i.e. navbar and logo.
+
+## Home
+The home page is where the user lands when accessing the website. It holds the store description, links and a large inviting image
+
+## Products
+The user can access any product from the navbar or view all products. Each product category can be sorted by price or rating.
+The product card shows the product's rating, name, price, category and image.
+
+## Product Details
+The user can click on a product of their choice to view more details like description or enlarge product image for a better look.
+This is also where the user can select the quantity of the product and add it to cart or return back to products page.
+
+## Cart
+The user can access the cart where all the products they have added are displayed along with the grand total price.
+The user can increment/decrement the quantity of a product or even remove a product from cart if they wish to do so.
+
+## Checkout 
+Once the user is satisfied they can proceed to checkout to enter their delivery information and payment details.
+if the user is signed in they will be able to check the option to save the checkout information to their profile.
+
+## Profile
+In the Profile page the user is able to view their orders and order details as well as update their delivery information
+
+# Data Schema
+
+## Profiles App
+| Name | Database Key | Field Type | Type Validation |
+| :-------------: |:----------------:| :--------------: | :---------: |
+|User | user |	OneToOneField 'User'| on_delete=models.CASCADE
+|Default Phone Number |	default_phone_number | CharField | max_length=20, null=True, blank=True
+|Default Country | default_country | CountryField | blank_label='Country', null=True, blank=True
+|Default Postcode | default_postcode | CharField | max_length=20, null=True, blank=True
+|Default Town or City | default_town_or_city | CharField | max_length=40, null=True, blank=True
+|Default Street Address1 | default_street_address1 | CharField | max_length=80, null=True, blank=True
+|Default Street Address2 | default_street_address2 | CharField | max_length=80, null=True, blank=True
+|Default County | default_county | CharField | max_length=80, null=True, blank=True
+
+## Products App
+### Category
+| Name | Database Key | Field Type | Type Validation |
+| :-------------: |:----------------:| :--------------: | :---------: |
+|Name | name | CharField | max_length=254
+|Friendly Name | friendly_name | CharField | max_length=254, null=True
+
+### Product
+| Name | Database Key | Validation | Field Type|
+| :-------------: |:----------------:| :--------------: | :---------: |
+|Category | category | ForeignKey |default='', max_length=254 | CharField
+|Name | name | default='', max_length=254 | CharField
+|Description | description | blank=True | TextField
+|Price | price | max_digits=6, decimal_places=2 | DecimalField
+|Image URL | image_url | blank=True | URLField
+|Image| image| blank=True | ImageField
+
+## Checkout App
+### Order
+| Name              | Database Key    | Field Type    | Type Validation                                                                       |
+|-------------------|-----------------|---------------|---------------------------------------------------------------------------------------|
+| Order Number      | order_number    | CharField     | max_length=32, null=False, editable=False                                             |
+| User Profile      | user_profile    | ForeignKey    | UserProfile, on_delete=models.SET_NULL , null=True, blank=True, related_name='orders' |
+| Full Name         | full_name       | CharField     | max_length=50, null=False, blank=False                                                |
+| Email             | email           | EmailField    | max_length=254, null=False, blank=False                                               |
+| Phone Number      | phone_number    | CharField     | max_length=20, null=False, blank=False                                                |
+| Country           | country         | CountryField  | blank_label='Country'*, null=False, blank=False                                       |
+| Postcode          | postcode        | CharField     | max_length=20, null=True, blank=True                                                  |
+| Town or City      | town_or_city    | CharField     | max_length=40, null=False, blank=False                                                |
+| Street Address 1  | street_address1 | CharField     | max_length=80, null=False, blank=False                                                |
+| Street Address 2  | street_address2 | CharField     | max_length=80, null=True, blank=False                                                 |
+| County            | county          | CharField     | max_length=80, null=True, blank=False                                                 |
+| Date              | date            | DateTimeField | auto_now_add=True                                                                     |
+| Delivery Cost     | delivery_cost   | DecimalField  | max_digits=6, decimal_places=2, null=False, default=0                                 |
+| Order Total       | order_total     | DecimalField  | max_digits=10, decimal_places=2, null=False, default=0                                |
+| Grand Total       | grand_total     | Decimal Field | max_digits=10, decimal_places=2, null=False, default=0                                |
+| Original cart     | original_cart   | TextField     | null=False, blank=False, default=''                                                   |
+| Stripe Payment ID | stripe_pid      | CharField     | max_length=254, null=False, blank=False, default=''                                   |
+
+### OrderLineItem
+| Name            | Database Key   | Field Type   | Type Validation                                                                    |
+|-----------------|----------------|--------------|------------------------------------------------------------------------------------|
+| Order           | order          | ForeignKey   | Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems' |
+| Product         | product        | ForeignKey   | Product, null=False, blank=False, on_delete=models.CASCADE                         |
+| Product Size    | product_size   | CharField    | max_length=2, null=True, blank=True                                                |
+| Quantity        | quantity       | IntegerField | null=False, blank=False, default=0                                                 |
+| Line Item Total | lineitem_total | DecimalField | max_length=6, decimal_places=2, null=False, blank=False, editable=False            |
+
 # Features
 
 ## Existing Features
@@ -89,6 +178,10 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 
 *[AWS](https://aws.amazon.com/)
 -I used AWS for cloud storage
+
+# Tests
+
+
 
 # Deployment
 
