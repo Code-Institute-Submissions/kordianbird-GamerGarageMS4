@@ -176,10 +176,21 @@ In the Profile page the user is able to view their orders and order details as w
 * [Heroku](https://id.heroku.com/login)
 -I used heroku to deploy my project
 
-*[AWS](https://aws.amazon.com/)
+* [AWS](https://aws.amazon.com/)
 -I used AWS for cloud storage
 
 # Tests
+
+For testing I used:
+
+* [W3C Markup Validator](https://validator.w3.org/nu/)
+
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+* [JSHint](https://jshint.com/)
+
+Testing results can be found here:
+[Code, lighthouse, browser compatibility tests](Tests/GamerGarageTests.PNG)
 
 
 
