@@ -7,18 +7,13 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 **As the site owner, I would like to:**
 * Access the admin section of the site
 * Create, Read, Update and Delete products in the database from a centralised location through the admin app
-* Have the customers to be able to rate and review products to provide me with valuable information
 
 ## User Stories
 
 **As a user, I want:**  
 * the website to look nice
 * to be able to create an account
-* to be able to review items
-* to be able to rate items
-* to be able to add items to my own wishlist
 * to be able to navigate through the website with ease
-* to be able to view the website on smaller devices
 * to be able to personalize my account
 * to be able to purchase products
 * to be able to read the description of a product
@@ -26,7 +21,6 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 * to be able to log out
 * to be able to search for specific items
 * to be able to easily checkout
-* to be able to edit my reviews/ratings
 
 # Design
 
@@ -37,7 +31,7 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 
 ## Existing Features
 
-* __navbar__ - allows the user to navigate between pages
+* __navbar__ - allows the user to navigate through product pages
 * __about section__ - lets the user know more about the website
 * __profile__ - lets the user see their order history and provide default delivery information
 * __search bar__ - allows for an easier way to locate products
@@ -51,6 +45,9 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 
 * [CSS3](https://en.wikipedia.org/wiki/CSS)
 -I used css3 to style many aspects of the website
+
+* [JavaScript](https://www.javascript.com/)
+-I used javascript for backend development
 
 * [Python](https://www.python.org/)
 -I used python to work on the backend of my project
@@ -90,4 +87,49 @@ GamerGarage is my final project for CodeInstitute. It is an online shop for the 
 * [Heroku](https://id.heroku.com/login)
 -I used heroku to deploy my project
 
+*[AWS](https://aws.amazon.com/)
+-I used AWS for cloud storage
 
+# Deployment
+
+## Heroku
+
+1. Sign in or create an account on Heroku
+
+2. Create a new app and choose an app name and region
+
+3. Connect your Heroku app to your repository and enable automatic deployment
+
+4. Add Postgres as your database in resources section
+
+5. Copy and Paste your envioroment variable into settings.py file
+
+6. run migrations
+
+7. create a superuser 
+
+8. run your app and access your admin page by logging in with your superuser credentials
+
+9. load your fixtures to postgres
+
+10. create a Procfile
+
+11. freeze your requirements.txt
+
+12. add your Heroku url to ALLOWED_HOSTS
+
+13. add. , commit and push your changes
+
+14. deploy your app in Heroku
+
+15. now push your changes to automatically push them to heroku
+
+# Code
+
+* For most of this project, I used the Boutique Ado walkthrough project to help me through my project and borrowed a large amount of code to help with the structure of it also
+
+* I used the [Django Documentation](https://docs.djangoproject.com/en/4.0/) for the Allauth setup and also with other aspects of setting up my project
+
+* I used [Bootstrap](https://getbootstrap.com/) to create and style many aspects of this project
+
+* I used [Stack Overflow](https://stackoverflow.com/), [Slack](https://slack.com/intl/en-ie/) and Tutor Assistance to solve many issues I faced in development
