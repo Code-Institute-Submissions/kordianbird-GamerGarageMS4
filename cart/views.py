@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, HttpResponse
 
 # Create your views here.
 
+
 def view_cart(request):
     """ View that renders the cart contents page """
 
@@ -51,7 +52,6 @@ def remove_from_cart(request, item_id):
         return HttpResponse(status=500)
 
 
-
 def adjust_cart(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
@@ -76,4 +76,3 @@ def adjust_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
-
